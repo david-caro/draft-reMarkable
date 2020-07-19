@@ -14,7 +14,7 @@ Rectangle {
         NumberAnimation {
             property:"y"
             to:0
-            duration:1000
+            duration:500
         }
     }
 
@@ -22,7 +22,7 @@ Rectangle {
         id: heading
         anchors.left:parent.left
         anchors.right:parent.right
-        text: " <font size=8> draft</font> launcher"
+        text: " <font size=8> David's</font> reader thingy"
         textFormat: Text.RichText
         horizontalAlignment: Text.AlignHCenter
         font.pixelSize: 80
@@ -48,10 +48,10 @@ Rectangle {
 
     Text {
         id: credit
+        text: "draft v0.2 created by @dixonary_ and messed up by @david-caro"
         anchors.right:parent.right
         anchors.bottom:parent.bottom
         anchors.margins: {bottom:10}
-        text: qsTr("draft v0.2 created by @dixonary_")
         font.pixelSize: 30
         font.family:"Noto Serif"
         font.italic:true
@@ -101,7 +101,7 @@ Rectangle {
         font.pixelSize: 40
         font.family:"Noto Serif"
         font.italic:true
-        text: "Available Options"
+        text: "Things to do"
         y: heading.y + heading.height + 50
     }
     Rectangle {

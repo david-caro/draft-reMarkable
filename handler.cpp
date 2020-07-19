@@ -40,6 +40,7 @@ bool Handler::eventFilter(QObject* obj, QEvent* event)
         return false;
 }
 
+
 void Handler::handleEvent() {
     gotEvents = 1;
 
